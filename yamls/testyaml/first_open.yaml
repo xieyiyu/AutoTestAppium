@@ -1,0 +1,12 @@
+testinfo:
+  - id: test00001
+    title: 首次启动应用
+testcase:
+  - operate_type: swipe_left
+    times: 3
+  - element_info: com.cma.launcher.lite:id/btn_enter
+    find_type: id
+    operate_type: click
+check:
+  - element_info: com.cma.launcher.lite:id/recommend_wallpaper
+    find_type: id
