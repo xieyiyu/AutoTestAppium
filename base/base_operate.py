@@ -1,6 +1,7 @@
 from base.base_element import BaseElement
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions
+from time import sleep
 
 class BaseOperate:
     def __init__(self, driver=""):
@@ -40,11 +41,20 @@ class BaseOperate:
         self.find_element_by(testcase).click() # 此处应添加判断testcase['find_type']是否是BaseElement类中定义的类型之一
 
     # 左滑动
-    def swipe_left(self, case_operate, swipe_time):
+    def swipe_left(self, case_operate):
+        width = self.driver.get_window_size()['width'] # 待改进：获取window_size应封装
+        height = self.driver.get_window_size()['height']
+        for i in range(case_operate['times']):
+            self.driver.swipe(width * 0.75, height * 0.5, width * 0.25, height * 0.5, case_operate['swipe_time'])
+            sleep(1) # 避免无法定位到元素
+
+    # 右滑动
+    def swipe_right(self, case_operate):
         width = self.driver.get_window_size()['width']
         height = self.driver.get_window_size()['height']
         for i in range(case_operate['times']):
-            self.driver.swipe(width * 0.75, height * 0.5, width * 0.25, height * 0.5, swipe_time)
+            self.driver.swipe(width * 0.25, height * 0.5, width * 0.75, height * 0.5, case_operate['swipe_time'])
+            sleep(1)
 
     # 封装常用查找元素方法
     def find_element_by(self, case_operate):

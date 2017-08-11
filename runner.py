@@ -9,6 +9,7 @@ from base.base_appium import *
 from base.base_init import init_devices
 from base.base_parametrize import ParametrizedTestCase
 from testcase.first_open_test import FirstOpenTest
+from testcase.folder_rename_test import FolderRenameTest
 
 def runner_pool(devices_pool):
     print("---------------runner_pool---------------")
@@ -24,6 +25,7 @@ def runner_case_app(devices_app):
     # start_time = datetime.now()
     testuite = unittest.TestSuite()
     testuite.addTest(ParametrizedTestCase.parametrize(FirstOpenTest, param=devices_app))
+    # testuite.addTest(ParametrizedTestCase.parametrize(FolderRenameTest, param=devices_app))
     print('testuite: ', testuite)
     fp = open(PATH("../report/report.html"), "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"自动化测试报告", description=u"用例执行情况")

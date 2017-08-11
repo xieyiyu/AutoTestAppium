@@ -1,0 +1,13 @@
+testinfo:
+  - id: test00002
+    title: 重命名文件夹
+testcase:
+  - element_info: com.cma.launcher.lite:id/preview_background
+    find_type: id
+    operate_type: click
+  - element_info: com.cma.launcher.lite:id/folder_menu_btn
+    find_type: id
+    operate_type: click
+  - element_info: com.cma.launcher.lite:id/list_item_text
+    find_type: id
+    operate_type: click

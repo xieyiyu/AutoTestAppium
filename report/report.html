@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-08-10 19:34:57</p>
-<p class='attribute'><strong>Duration:</strong> 0:04:57.771642</p>
-<p class='attribute'><strong>Status:</strong> Error 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-08-11 12:30:55</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:07.912637</p>
+<p class='attribute'><strong>Status:</strong> Pass 2</p>
 
 <p class='description'>用例执行情况</p>
 </div>
@@ -221,63 +221,55 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>testcase.first_open_test.FirstOpenTest</td>
-    <td>1</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_first_open</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_first_open</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "D:/workspace/PycharmProjects/AutoTestAppium\testcase\first_open_test.py", line 12, in test_first_open
-    first_open.operate()
-  File "D:/workspace/PycharmProjects/AutoTestAppium\testpage\first_open_page.py", line 16, in operate
-    result = self.operate_element.operate(item,self.test_info)
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 29, in operate
-    if self.find_element(case_operate):
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 17, in find_element
-    WebDriverWait(self.driver, BaseElement.WAIT_TIME).until(lambda x: self.find_element_by(case_operate))
-  File "D:\python3\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
-    value = method(self._driver)
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 17, in &lt;lambda&gt;
-    WebDriverWait(self.driver, BaseElement.WAIT_TIME).until(lambda x: self.find_element_by(case_operate))
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 57, in find_element_by
-    return elements[case_operate['find_type']]()
-KeyError: 'find_type'
-Traceback (most recent call last):
-  File "D:/workspace/PycharmProjects/AutoTestAppium\testcase\first_open_test.py", line 12, in test_first_open
-    first_open.operate()
-  File "D:/workspace/PycharmProjects/AutoTestAppium\testpage\first_open_page.py", line 16, in operate
-    result = self.operate_element.operate(item,self.test_info)
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 29, in operate
-    if self.find_element(case_operate):
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 17, in find_element
-    WebDriverWait(self.driver, BaseElement.WAIT_TIME).until(lambda x: self.find_element_by(case_operate))
-  File "D:\python3\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
-    value = method(self._driver)
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 17, in &lt;lambda&gt;
-    WebDriverWait(self.driver, BaseElement.WAIT_TIME).until(lambda x: self.find_element_by(case_operate))
-  File "D:/workspace/PycharmProjects/AutoTestAppium\base\base_operate.py", line 57, in find_element_by
-    return elements[case_operate['find_type']]()
-KeyError: 'find_type'
+pt1.1: 
 
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_first_open_more</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 
 
         </pre>
     </div>
@@ -288,10 +280,10 @@ KeyError: 'find_type'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
+    <td>2</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

@@ -21,7 +21,8 @@ class BaseAppium:
             print(device_config)
             appium_cmd = "appium -a 127.0.0.1 -p " + str(device_config['port']) \
                          + " -bp " + str(device_config['bsport']) \
-                         + " -U " + str(device_config['udid'])
+                         + " -U " + str(device_config['udid']) \
+                         + " --session-override"
             print(appium_cmd)
             run_server = RunServer(appium_cmd)
             p = Process(target=run_server.start())
@@ -44,7 +45,7 @@ class BaseAppium:
         response = None
         for i in range(0, len(self.devices)):
             url = "http://127.0.0.1:" + str(self.devices[i]['port']) + "/wd/hub" + "/status"
-            print("url: ", url)
+            print("waiting to connect: ", url)
             try:
                 response = urllib.request.urlopen(url, timeout=5)
                 print("---------------appium_is_running_server---------------")

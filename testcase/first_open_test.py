@@ -11,6 +11,10 @@ class FirstOpenTest(ParametrizedTestCase):
         first_open = FirstOpen(driver=self.driver, path=PATH("../yamls/testyaml/first_open.yaml"))
         first_open.operate()
 
+    # def test_first_open_more(self): # 方法命名要以test开头
+    #     first_open = FirstOpen(driver=self.driver, path=PATH("../yamls/testyaml/first_open_more.yaml"))
+    #     first_open.operate()
+
     def setUp(self):
         ("---------------FirstOpenTest---------------")
         super(FirstOpenTest, self).setUp()
