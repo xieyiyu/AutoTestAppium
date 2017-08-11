@@ -14,7 +14,6 @@ from testcase.folder_rename_test import FolderRenameTest
 def runner_pool(devices_pool):
     print("---------------runner_pool---------------")
     print(devices_pool)
-    print("111")
     pool = Pool(len(devices_pool))  # 创建进程池，设置最大进程数量
     print(pool)
     pool.map(runner_case_app, devices_pool)
