@@ -1,4 +1,8 @@
 import os
+import re
+import math
+from math import ceil
+import subprocess
 
 '''
 adb 命令
@@ -18,7 +22,7 @@ class AdbUtil(object):
         results.close()
         return command_result
 
-    # 检查设备,adb devices
+    # 检查设备,adb devices,获取连接的设备
     def adb_devices(self):
         result = self.call_adb("devices")
         devices = result.partition('\n')[2].replace('\n', '').split('\tdevice') # ['device1', 'device2', '']

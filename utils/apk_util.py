@@ -1,5 +1,7 @@
 import re
 import subprocess
+import os
+import math
 
 '''
 获取apk信息
@@ -36,6 +38,11 @@ class ApkUtil:
         apk_info['appActivity'] = match_activity.group(1)
 
         return apk_info
+
+    # 获取apk大小
+    def get_apk_size(self):
+        apk_size = math.floor(os.path.getsize(self.apkPath) / (1024 * 1000))
+        return str(apk_size) + "M"
 
 if __name__ == '__main__':
     pass

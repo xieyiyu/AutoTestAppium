@@ -23,7 +23,9 @@ class BaseOperate:
             return False
 
     # 封装操作
-    def operate(self, case_operate, test_info, log_test): # 未写入log
+    def operate(self, case_operate, test_info): # 未写入log
+        print('----------------base_operate---------------')
+        print('test_info: ',test_info)
         if self.find_element(case_operate):
             elements = {
                 BaseElement.CLICK: lambda: self.click(case_operate),
