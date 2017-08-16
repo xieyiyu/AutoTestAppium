@@ -1,5 +1,6 @@
 import unittest
 from appium import webdriver
+
 '''
 参数化测试用例
 '''

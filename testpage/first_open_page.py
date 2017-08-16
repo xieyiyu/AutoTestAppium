@@ -13,8 +13,18 @@ class FirstOpen:
     # 操作步骤
     def operate(self):
         for item in self.test_case:
-            result = self.operate_element.operate(item,self.test_info)
+            result = self.operate_element.operate(item, self.test_info)
             if not result:
                 print("operate failed")
                 self.is_operate = False
                 break
+
+    # 检查点
+    def check_point(self):
+        result = False
+        if not self.is_operate:
+            print("operate failed,can't find check_point")
+        else:
+            check = get_yaml(self.path)['check']
+            result = self.operate_element.find_element(check)
+        return result

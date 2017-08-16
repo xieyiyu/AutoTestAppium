@@ -13,6 +13,6 @@ testcase:
   - element_info: com.cma.launcher.lite:id/recommend_wallpaper
     find_type: id
     operate_type: click
-#check:
-#  - element_info: com.cma.launcher.lite:id/recommend_wallpaper
-#    find_type: id
+check:
+  - element_info: com.cma.launcher.lite:id/wheelCoverView
+    find_type: id

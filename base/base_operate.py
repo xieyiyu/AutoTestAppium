@@ -1,7 +1,12 @@
-from base.base_element import BaseElement
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions
 from time import sleep
+
+from base.base_element import BaseElement
+
+'''
+元素操作方法
+'''
 
 class BaseOperate:
     def __init__(self, driver=""):

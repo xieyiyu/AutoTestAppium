@@ -1,6 +1,6 @@
 testinfo:
   - id: test00002
-    title: 重命名文件夹
+    title: 文件夹
 testcase:
   - element_info: com.cma.launcher.lite:id/preview_background
     find_type: id
