@@ -11,8 +11,9 @@ class FolderPage:
         self.test_case = get_yaml(self.path)['testcase']
 
     # 操作步骤
-    def operate(self):
-        for item in self.test_case:
+    def operate(self, test_case_name):
+        case = self.test_case[test_case_name]
+        for item in case:
             result = self.operate_element.operate(item,self.test_info)
             if not result:
                 print("operate failed")

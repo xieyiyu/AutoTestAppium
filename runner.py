@@ -14,7 +14,7 @@ from testcase.folder_test import FolderTest
 def runner_pool(devices_pool):
     print("---------------runner_pool---------------")
     print(devices_pool)
-    pool = Pool(len(devices_pool))  # 创建进程池，设置最大进程数量
+    pool = Pool(len(devices_pool))  # 创建进程池，批量创建子进程，设置最大进程数量
     print(pool)
     pool.map(runner_case_app, devices_pool)
     pool.close()  # 等待进程池中的worker进程执行结束再关闭pool

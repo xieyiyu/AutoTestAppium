@@ -8,13 +8,15 @@ PATH = lambda p: os.path.abspath(
 )
 
 class FolderTest(ParametrizedTestCase):
+
     def test_01_folder_rename(self):
-        folder_rename = FolderPage(driver=self.driver, path=PATH("../yamls/testyaml/folder.yaml"))
-        folder_rename.operate()
+        self.folder = FolderPage(driver=self.driver, path=PATH("../yamls/testyaml/folder.yaml"))
+        self.folder.operate(test_case_name='folder_rename')
 
-    # def test_02_folder_create(self):
-    #     folder_create = FolderPage(driver=self.driver, )
 
-    # def setUp(self):
-    #     ("---------------FolderRenameTest---------------")
-    #     super(FolderRenameTest, self).setUp()
+    def test_02_folder_create(self):
+        self.folder = FolderPage(driver=self.driver, path=PATH("../yamls/testyaml/folder.yaml"))
+        self.folder.operate(test_case_name='folder_create')
+
+    def setUp(self):
+        super(FolderTest, self).setUp()

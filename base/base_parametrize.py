@@ -4,6 +4,7 @@ from appium import webdriver
 '''
 参数化测试用例
 '''
+devices = dict()
 
 class ParametrizedTestCase(unittest.TestCase):
     """ TestCase classes that want to be parametrized should
@@ -11,19 +12,24 @@ class ParametrizedTestCase(unittest.TestCase):
     """
     def __init__(self, methodName='runTest', param=None):
         super(ParametrizedTestCase, self).__init__(methodName)
-        self.devices = param
+        global devices
+        devices = param
 
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
+        global devices
         desired_caps = dict()
-        desired_caps['platformName'] = self.devices['platformName']
-        desired_caps['platformVersion'] = self.devices['platformVersion']
-        desired_caps['deviceName'] = self.devices['udid'] # 暂未添加获取deviceName方法，用udid替代
-        desired_caps['app'] = self.devices['app']
-        desired_caps['appPackage'] = self.devices['appPackage']
-        desired_caps['appActivity'] = self.devices['appActivity']
+        desired_caps['platformName'] = devices['platformName']
+        desired_caps['platformVersion'] = devices['platformVersion']
+        desired_caps['deviceName'] = devices['udid'] # 暂未添加获取deviceName方法，用udid替代
+        desired_caps['app'] = devices['app']
+        desired_caps['appPackage'] = devices['appPackage']
+        desired_caps['appActivity'] = devices['appActivity']
+        desired_caps['noReset'] = "true"
+        desired_caps['fullReset'] = "false"
 
-        remote = "http://127.0.0.1:" + str(self.devices['port']) + "/wd/hub"
-        self.driver = webdriver.Remote(remote, desired_caps)
+        remote = "http://127.0.0.1:" + str(devices['port']) + "/wd/hub"
+        cls.driver = webdriver.Remote(remote, desired_caps)
 
     @staticmethod
     def parametrize(testcase_klass, param=None):
