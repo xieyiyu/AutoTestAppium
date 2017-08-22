@@ -1,7 +1,7 @@
-from base.base_operate import BaseOperate
+from pageobejct.base_operate import BaseOperate
 from utils.yaml_util import get_yaml
 
-class FolderPage:
+class BaseCase:
     def __init__(self, **kwargs): # **kwargs表示关键字参数，是一个dict
         self.driver = kwargs['driver']
         self.path = kwargs['path']
@@ -10,8 +10,12 @@ class FolderPage:
         self.test_info = get_yaml(self.path)['testinfo']
         self.test_case = get_yaml(self.path)['testcase']
 
-    # 操作步骤
     def operate(self, test_case_name):
+        """
+        操作步骤
+        :param test_case_name: 用例名称 对应yaml中
+        :return:
+        """
         case = self.test_case[test_case_name]
         for item in case:
             result = self.operate_element.operate(item,self.test_info)
@@ -19,3 +23,16 @@ class FolderPage:
                 print("operate failed")
                 self.is_operate = False
                 break
+
+    def check_point(self):
+        """
+        检查点
+        :return:
+        """
+        result = False
+        if not self.is_operate:
+            print("operate failed,can't find check_point")
+        else:
+            check = get_yaml(self.path)['check']
+            result = self.operate_element.find_element(check)
+        return result

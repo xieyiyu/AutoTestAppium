@@ -1,9 +1,0 @@
-# device-congig
- - platformName: Android
-   platformVersion: 5.1
-   port: 4723
-   bsport: 4733
-# - platformName: Android
-#   platformVersion: 6.0.1
-#   port: 5723
-#   bsport: 5733
