@@ -26,8 +26,6 @@ def runner_case_app(devices_app):
     testuite = unittest.TestSuite()
     testuite.addTest(ParametrizedTestCase.parametrize(FirstOpenTest, param=devices_app))
     testuite.addTest(ParametrizedTestCase.parametrize(FolderTest, param=devices_app))
-    print('testuite: ', testuite)
-    # unittest.TextTestRunner(verbosity=2).run(testuite)
     fp = open(PATH("../report/report.html"), "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"自动化测试报告", description=u"用例执行情况")
     runner.run(testuite)

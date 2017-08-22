@@ -2,7 +2,6 @@ import os
 
 from base.base_parametrize import ParametrizedTestCase
 from testpage.first_open_page import *
-from testpage.folder_page import *
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -15,5 +14,4 @@ class FirstOpenTest(ParametrizedTestCase):
         first_open.check_point()
 
     def setUp(self):
-        ("---------------FirstOpenTest---------------")
         super(FirstOpenTest, self).setUp()
