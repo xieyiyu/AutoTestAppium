@@ -3,6 +3,7 @@ import threading
 from multiprocessing import Process
 import urllib.request
 from urllib.error import URLError
+from utils.logging_config import log
 
 """
 启动、关闭、重启Appium服务
@@ -22,16 +23,16 @@ class BaseAppium:
         :return:
         """
         for i in range(0, len(self.devices)):
-            print("---------------appium_start_server---------------")
-            print(self.devices)
+            log.info("---------------appium_start_server---------------")
+            log.info(self.devices)
             device_config = self.devices[i]
-            print(device_config)
+            log.info(device_config)
             appium_cmd = "appium -a 127.0.0.1 -p " + str(device_config['port']) \
                          + " -bp " + str(device_config['bsport']) \
                          + " -U " + str(device_config['udid']) \
                          + " --session-override" \
                          + " --no-reset"
-            print(appium_cmd)
+            log.info(appium_cmd)
             run_server = RunServer(appium_cmd)
             p = Process(target=run_server.start())
             p.start()
@@ -43,7 +44,7 @@ class BaseAppium:
         :return:
         """
         os.system('taskkill /f /im  node.exe')
-        print("---------------appium_stop_server---------------")
+        log.info("---------------appium_stop_server---------------")
 
     def restart_server(self):
         """
@@ -52,7 +53,7 @@ class BaseAppium:
         """
         self.stop_server()
         self.start_server()
-        print("---------------appium_restart_server---------------")
+        log.info("---------------appium_restart_server---------------")
 
     def is_running(self):
         """
@@ -62,16 +63,17 @@ class BaseAppium:
         response = None
         for i in range(0, len(self.devices)):
             url = "http://127.0.0.1:" + str(self.devices[i]['port']) + "/wd/hub" + "/status"
-            print("waiting to connect: ", url)
+            log.info("waiting to connect: ", url)
             try:
                 response = urllib.request.urlopen(url, timeout=5)
-                print("---------------appium_is_running_server---------------")
-                print("response: ", response)
+                log.info("---------------appium_is_running_server---------------")
+                log.info("response: ", response)
                 if str(response.getcode()).startswith("2"):
                     return True
                 else:
                     return False
             except URLError:
+                log.error(u"s% time out!",url)
                 return False
             finally:
                 if response:

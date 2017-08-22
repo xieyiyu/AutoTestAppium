@@ -10,4 +10,4 @@ def get_yaml(path):
         with open(path, encoding='utf-8') as f:
             return yaml.load(f)
     except FileNotFoundError:
-        print(u"can't find yaml file: ", path)
+        print(u"can't find yaml file:s% " %path)

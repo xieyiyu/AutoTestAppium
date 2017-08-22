@@ -1,0 +1,16 @@
+2017-08-22 18:12:27,222 - fileLogger - INFO - info
+2017-08-22 18:12:27,222 - fileLogger - WARNING - warn
+2017-08-22 18:12:27,222 - fileLogger - ERROR - error
+2017-08-22 18:17:12,122 - fileLogger - INFO - info
+2017-08-22 18:17:12,122 - fileLogger - WARNING - warn
+2017-08-22 18:17:12,122 - fileLogger - ERROR - error
+2017-08-22 18:31:22,572 - fileLogger - INFO - info
+2017-08-22 18:31:22,572 - fileLogger - WARNING - warn
+2017-08-22 18:31:22,572 - fileLogger - ERROR - error
+2017-08-22 18:37:01,583 - fileLogger - INFO - info
+2017-08-22 18:37:01,583 - fileLogger - WARNING - warn
+2017-08-22 18:37:01,583 - fileLogger - ERROR - error
+2017-08-22 18:41:32,236 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-22 18:41:32,236 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '4.3', 'deviceName': '78f64eef', 'udid': '78f64eef', 'app': 'D:\\uiTest\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-22 18:41:32,236 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '4.3', 'deviceName': '78f64eef', 'udid': '78f64eef', 'app': 'D:\\uiTest\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-22 18:41:32,236 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U 78f64eef --session-override --no-reset

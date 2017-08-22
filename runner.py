@@ -10,26 +10,31 @@ from base.base_init import init_devices
 from base.base_parametrize import ParametrizedTestCase
 from testcase.first_open_test import FirstOpenTest
 from testcase.folder_test import FolderTest
+from utils.logging_config import log
 
 def runner_pool(devices_pool):
+
     """
     创建进程池，实现多设备执行用例
     :param devices_pool: 设备信息
     :return:
     """
-    print("---------------runner_pool---------------")
+
+    log.info("---------------runner_pool---------------")
+    log.info(devices_pool)
     pool = Pool(len(devices_pool))  # 创建进程池，批量创建子进程，设置最大进程数量
     pool.map(runner_case_app, devices_pool)
     pool.close()  # 等待进程池中的worker进程执行结束再关闭pool
     pool.join()  # 等待进程池中的worker进程执行完毕，防止主进程在worker进程结束前结束，必须在close()或terminate()之后
 
 def runner_case_app(devices_app):
+
     """
     执行case，并输出测试报告
     :param devices_app: 设备信息
     :return:
     """
-    print("---------------runner_case_app---------------")
+    log.info("---------------runner_case_app---------------")
     # start_time = datetime.now()
     testuite = unittest.TestSuite()
     testuite.addTest(ParametrizedTestCase.parametrize(FirstOpenTest, param=devices_app))
@@ -49,4 +54,4 @@ if __name__ == '__main__':
         runner_pool(get_devices)
         appium_server.stop_server()
     else:
-        print(u"设备不存在")
+        log.error(u"设备不存在")

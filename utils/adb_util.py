@@ -1,8 +1,5 @@
-import os
-import re
-import math
-from math import ceil
 import subprocess
+from utils.logging_config import log
 
 '''
 adb 命令
@@ -88,8 +85,7 @@ class AdbUtil(object):
         return self.adb("install -r %s" % apk_path)
 
 if __name__ == '__main__':
-    print(AdbUtil().get_device_list())
-    print(AdbUtil().get_android_version())
-    print(AdbUtil().get_device_model(), AdbUtil().get_device_brand(), AdbUtil().get_device_name())
-
+    log.info(AdbUtil().get_device_list())
+    log.info(AdbUtil().get_android_version())
+    log.info(AdbUtil().get_device_model(), AdbUtil().get_device_brand(), AdbUtil().get_device_name())
 

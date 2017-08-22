@@ -1,15 +1,16 @@
 import unittest
 from appium import webdriver
+from utils.logging_config import log
 
 '''
 参数化测试用例
 '''
-devices = dict()
 
 class ParametrizedTestCase(unittest.TestCase):
     """ TestCase classes that want to be parametrized should
         inherit from this class.
     """
+    devices = dict()
     def __init__(self, methodName='runTest', param=None):
         super(ParametrizedTestCase, self).__init__(methodName)
         global devices
@@ -34,7 +35,7 @@ class ParametrizedTestCase(unittest.TestCase):
 
     @staticmethod
     def parametrize(testcase_klass, param=None):
-        print('testcase_klass: ', testcase_klass)
+        log.info('testcase_klass: ', testcase_klass)
         testloader = unittest.TestLoader()
         testnames = testloader.getTestCaseNames(testcase_klass)
         suite = unittest.TestSuite()

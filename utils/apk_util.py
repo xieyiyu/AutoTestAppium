@@ -2,6 +2,7 @@ import re
 import subprocess
 import os
 import math
+from utils.logging_config import log
 
 '''
 获取apk信息
@@ -54,9 +55,10 @@ class ApkUtil:
         apk_size = math.floor(os.path.getsize(self.apk_path) / (1024 * 1000))
         return str(apk_size) + "M"
 
+
 if __name__ == '__main__':
     pass
     apk_info1 = ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_info()
-    print(apk_info1)
-    print(ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_size())
+    log.info(apk_info1)
+    log.info(ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_size())
 
