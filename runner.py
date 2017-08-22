@@ -9,12 +9,12 @@ from base.base_appium import *
 from base.base_init import init_devices
 from base.base_parametrize import ParametrizedTestCase
 from testcase.first_open_test import FirstOpenTest
-from testcase.folder_rename_test import FolderRenameTest
+from testcase.folder_test import FolderTest
 
 def runner_pool(devices_pool):
     print("---------------runner_pool---------------")
     print(devices_pool)
-    pool = Pool(len(devices_pool))  # 创建进程池，设置最大进程数量
+    pool = Pool(len(devices_pool))  # 创建进程池，批量创建子进程，设置最大进程数量
     print(pool)
     pool.map(runner_case_app, devices_pool)
     pool.close()  # 等待进程池中的worker进程执行结束再关闭pool
@@ -25,13 +25,11 @@ def runner_case_app(devices_app):
     # start_time = datetime.now()
     testuite = unittest.TestSuite()
     testuite.addTest(ParametrizedTestCase.parametrize(FirstOpenTest, param=devices_app))
-    # testuite.addTest(ParametrizedTestCase.parametrize(FolderRenameTest, param=devices_app))
-    print('testuite: ', testuite)
+    testuite.addTest(ParametrizedTestCase.parametrize(FolderTest, param=devices_app))
     fp = open(PATH("../report/report.html"), "wb")
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"自动化测试报告", description=u"用例执行情况")
     runner.run(testuite)
     fp.close()
-
 
 if __name__ == '__main__':
     if AdbUtil().adb_devices():

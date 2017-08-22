@@ -1,7 +1,7 @@
 from base.base_operate import BaseOperate
 from utils.yaml_util import get_yaml
 
-class FolderRename:
+class FolderPage:
     def __init__(self, **kwargs): # **kwargs表示关键字参数，是一个dict
         self.driver = kwargs['driver']
         self.path = kwargs['path']
@@ -11,8 +11,9 @@ class FolderRename:
         self.test_case = get_yaml(self.path)['testcase']
 
     # 操作步骤
-    def operate(self):
-        for item in self.test_case:
+    def operate(self, test_case_name):
+        case = self.test_case[test_case_name]
+        for item in case:
             result = self.operate_element.operate(item,self.test_info)
             if not result:
                 print("operate failed")

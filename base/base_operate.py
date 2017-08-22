@@ -1,7 +1,12 @@
-from base.base_element import BaseElement
 from selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions
 from time import sleep
+
+from base.base_element import BaseElement
+
+'''
+元素操作方法
+'''
 
 class BaseOperate:
     def __init__(self, driver=""):
@@ -30,7 +35,8 @@ class BaseOperate:
         if self.find_element(case_operate):
             elements = {
                 BaseElement.CLICK: lambda: self.click(case_operate),
-                BaseElement.SWIPE_LEFT: lambda: self.swipe_left(case_operate)
+                BaseElement.SWIPE_LEFT: lambda: self.swipe_left(case_operate),
+                BaseElement.SET_VALUE: lambda : self.set_value(case_operate)
             }
             elements[case_operate['operate_type']]()
             return True
@@ -40,12 +46,16 @@ class BaseOperate:
     def click(self, testcase):
         self.find_element_by(testcase).click() # 此处应添加判断testcase['find_type']是否是BaseElement类中定义的类型之一
 
+    # 设置值
+    def set_value(self, case_operate):
+        self.find_element_by(case_operate).set_value(case_operate["text"])
+
     # 左滑动
     def swipe_left(self, case_operate):
         width = self.driver.get_window_size()['width'] # 待改进：获取window_size应封装
         height = self.driver.get_window_size()['height']
         for i in range(case_operate['times']):
-            self.driver.swipe(width * 0.75, height * 0.5, width * 0.25, height * 0.5, case_operate['swipe_time'])
+            self.driver.swipe(width * 0.8, height * 0.5, width * 0.2, height * 0.5, case_operate['swipe_time'])
             sleep(1) # 避免无法定位到元素
 
     # 右滑动

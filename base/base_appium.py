@@ -4,6 +4,10 @@ from multiprocessing import Process
 import urllib.request
 from urllib.error import URLError
 
+'''
+启动、关闭、重启Appium服务
+'''
+
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
 )
@@ -22,7 +26,8 @@ class BaseAppium:
             appium_cmd = "appium -a 127.0.0.1 -p " + str(device_config['port']) \
                          + " -bp " + str(device_config['bsport']) \
                          + " -U " + str(device_config['udid']) \
-                         + " --session-override"
+                         + " --session-override" \
+                         + " --no-reset"
             print(appium_cmd)
             run_server = RunServer(appium_cmd)
             p = Process(target=run_server.start())

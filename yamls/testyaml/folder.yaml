@@ -1,0 +1,30 @@
+testinfo:
+  - id: test00002
+    title: 文件夹
+
+testcase:
+  folder_rename:
+    - element_info: com.cma.launcher.lite:id/preview_background
+      find_type: id
+      operate_type: click
+    - element_info: com.cma.launcher.lite:id/folder_menu_btn
+      find_type: id
+      operate_type: click
+    - element_info: //android.widget.LinearLayout[@index='2']
+      find_type: xpath
+      operate_type: click
+    - element_info: com.cma.launcher.lite:id/folder_name
+      find_type: id
+      operate_type: set_value
+      text: rename
+    - element_info: com.cma.launcher.lite:id/add_btn
+      find_type: id
+      operate_type: click
+    - element_info: //android.widget.TextView[@index='2']
+      find_type: xpath
+      operate_type: click
+
+  folder_create:
+    - element_info: com.cma.launcher.lite:id/wheelCoverView
+      find_type: id
+      operate_type: click
