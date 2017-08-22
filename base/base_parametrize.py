@@ -21,7 +21,8 @@ class ParametrizedTestCase(unittest.TestCase):
         desired_caps = dict()
         desired_caps['platformName'] = devices['platformName']
         desired_caps['platformVersion'] = devices['platformVersion']
-        desired_caps['deviceName'] = devices['udid'] # 暂未添加获取deviceName方法，用udid替代
+        desired_caps['deviceName'] = devices['deviceName'] # 暂未添加获取deviceName方法，用udid替代
+        desired_caps['udid'] = devices['udid']
         desired_caps['app'] = devices['app']
         desired_caps['appPackage'] = devices['appPackage']
         desired_caps['appActivity'] = devices['appActivity']

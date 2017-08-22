@@ -12,15 +12,23 @@ from testcase.first_open_test import FirstOpenTest
 from testcase.folder_test import FolderTest
 
 def runner_pool(devices_pool):
+    """
+    创建进程池，实现多设备执行用例
+    :param devices_pool: 设备信息
+    :return:
+    """
     print("---------------runner_pool---------------")
-    print(devices_pool)
     pool = Pool(len(devices_pool))  # 创建进程池，批量创建子进程，设置最大进程数量
-    print(pool)
     pool.map(runner_case_app, devices_pool)
     pool.close()  # 等待进程池中的worker进程执行结束再关闭pool
     pool.join()  # 等待进程池中的worker进程执行完毕，防止主进程在worker进程结束前结束，必须在close()或terminate()之后
 
 def runner_case_app(devices_app):
+    """
+    执行case，并输出测试报告
+    :param devices_app: 设备信息
+    :return:
+    """
     print("---------------runner_case_app---------------")
     # start_time = datetime.now()
     testuite = unittest.TestSuite()
@@ -32,7 +40,7 @@ def runner_case_app(devices_app):
     fp.close()
 
 if __name__ == '__main__':
-    if AdbUtil().adb_devices():
+    if AdbUtil().get_device_list():
         get_devices = init_devices()
         appium_server = BaseAppium(get_devices)
         appium_server.start_server()

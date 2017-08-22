@@ -1,7 +1,7 @@
 import os
 
 from base.base_parametrize import ParametrizedTestCase
-from testpage.folder_page import *
+from base.base_case_operate import *
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -17,4 +17,4 @@ class FolderTest(ParametrizedTestCase):
 
     def setUp(self):
         super(FolderTest, self).setUp()
-        self.folder = FolderPage(driver=self.driver, path=PATH("../yamls/testyaml/folder.yaml"))
+        self.folder = BaseCase(driver=self.driver, path=PATH("../yamls/testyaml/folder.yaml"))

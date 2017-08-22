@@ -4,9 +4,9 @@ from multiprocessing import Process
 import urllib.request
 from urllib.error import URLError
 
-'''
+"""
 启动、关闭、重启Appium服务
-'''
+"""
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -16,8 +16,11 @@ class BaseAppium:
     def __init__(self, devices):
         self.devices = devices
 
-    # 启动appium服务
     def start_server(self):
+        """
+        启动appium服务
+        :return:
+        """
         for i in range(0, len(self.devices)):
             print("---------------appium_start_server---------------")
             print(self.devices)
@@ -33,20 +36,29 @@ class BaseAppium:
             p = Process(target=run_server.start())
             p.start()
 
-    # 关闭appium服务
     @staticmethod
     def stop_server():
+        """
+        关闭appium服务
+        :return:
+        """
         os.system('taskkill /f /im  node.exe')
         print("---------------appium_stop_server---------------")
 
-    # 重启appium服务
     def restart_server(self):
+        """
+        重启appium服务
+        :return:
+        """
         self.stop_server()
         self.start_server()
         print("---------------appium_restart_server---------------")
 
-    # 判断appium服务是否开启
     def is_running(self):
+        """
+        判断appium服务是否开启
+        :return:
+        """
         response = None
         for i in range(0, len(self.devices)):
             url = "http://127.0.0.1:" + str(self.devices[i]['port']) + "/wd/hub" + "/status"
