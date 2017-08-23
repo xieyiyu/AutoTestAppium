@@ -2,3 +2,6 @@
 2017-08-22 18:17:12,122 - fileLogger - ERROR - error
 2017-08-22 18:31:22,572 - fileLogger - ERROR - error
 2017-08-22 18:37:01,583 - fileLogger - ERROR - error
+2017-08-23 16:02:37,761 - fileLogger - ERROR - operate failed,can't find check_point
+2017-08-23 16:20:23,681 - fileLogger - ERROR - http://127.0.0.1:4723/wd/hub/status time out!
+2017-08-23 16:21:00,438 - fileLogger - ERROR - http://127.0.0.1:4723/wd/hub/status time out!

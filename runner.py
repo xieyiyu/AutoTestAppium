@@ -10,7 +10,7 @@ from base.base_init import init_devices
 from base.base_parametrize import ParametrizedTestCase
 from testcase.first_open_test import FirstOpenTest
 from testcase.folder_test import FolderTest
-from utils.logging_config import log
+from utils.logging_util import log
 
 def runner_pool(devices_pool):
 
@@ -47,10 +47,16 @@ def runner_case_app(devices_app):
 if __name__ == '__main__':
     if AdbUtil().get_device_list():
         get_devices = init_devices()
+        appPackage = get_devices[0]['appPackage']
+        # 判断app是否安装，若已安装则卸载（仅单设备）
+        if AdbUtil().is_app_installed(appPackage):
+            AdbUtil().remove_app(appPackage)
+        # 启动appium服务
         appium_server = BaseAppium(get_devices)
         appium_server.start_server()
         while not appium_server.is_running():
             time.sleep(5)
+        # 执行用例
         runner_pool(get_devices)
         appium_server.stop_server()
     else:

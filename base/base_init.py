@@ -15,6 +15,7 @@ def init_devices():
     """
     device_config = get_yaml(PATH("../yamls/config/config.yaml"))['devices']
     apk_path = get_yaml(PATH("../yamls/config/config.yaml"))['apk']
+    print(apk_path)
     apk_info = ApkUtil(apk_path).get_apk_info()
     get_devices = AdbUtil().get_device_list()
     i = 0

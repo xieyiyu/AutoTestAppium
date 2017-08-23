@@ -2,7 +2,7 @@ import re
 import subprocess
 import os
 import math
-from utils.logging_config import log
+from utils.logging_util import log
 
 '''
 获取apk信息
@@ -17,12 +17,12 @@ class ApkUtil:
         :param args:
         :return:
         """
-        cmd = "aapt %s" % (str(args))  # 单个设备可不传入device_id
+        cmd = "aapt %s" % (str(args))
         return subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     def get_apk_info(self):
         """
-        获取app包名,versionCode,versionName
+        获取app包名,versionCode,versionName,应用名称
         :return: apk_info
         """
         args = "dump badging %s" % self.apk_path
@@ -59,6 +59,7 @@ class ApkUtil:
 if __name__ == '__main__':
     pass
     apk_info1 = ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_info()
+    print(apk_info1)
     log.info(apk_info1)
     log.info(ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_size())
 

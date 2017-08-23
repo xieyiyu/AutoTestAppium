@@ -3,7 +3,7 @@ import threading
 from multiprocessing import Process
 import urllib.request
 from urllib.error import URLError
-from utils.logging_config import log
+from utils.logging_util import log
 
 """
 启动、关闭、重启Appium服务
@@ -63,17 +63,17 @@ class BaseAppium:
         response = None
         for i in range(0, len(self.devices)):
             url = "http://127.0.0.1:" + str(self.devices[i]['port']) + "/wd/hub" + "/status"
-            log.info("waiting to connect: ", url)
+            log.info("waiting to connect: %s" % url)
             try:
                 response = urllib.request.urlopen(url, timeout=5)
+                print(response)
                 log.info("---------------appium_is_running_server---------------")
-                log.info("response: ", response)
+                log.info("response: %s " % response)
                 if str(response.getcode()).startswith("2"):
                     return True
                 else:
                     return False
             except URLError:
-                log.error(u"s% time out!",url)
                 return False
             finally:
                 if response:
