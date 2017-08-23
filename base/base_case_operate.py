@@ -1,4 +1,4 @@
-from utils.logging_config import log
+from utils.logging_util import log
 from pageobejct.base_operate import BaseOperate
 from utils.yaml_util import get_yaml
 
@@ -21,7 +21,7 @@ class BaseCase:
         for item in case:
             result = self.operate_element.operate(item,self.test_info)
             if not result:
-                log.error("operate s% failed",item)
+                log.error("operate %s failed" % item)
                 self.is_operate = False
                 break
 
