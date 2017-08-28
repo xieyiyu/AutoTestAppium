@@ -58,8 +58,8 @@ class ApkUtil:
 
 if __name__ == '__main__':
     pass
-    apk_info1 = ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_info()
+    apk_info1 = ApkUtil(r"D:\uiTest\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_info()
     print(apk_info1)
     log.info(apk_info1)
-    log.info(ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_size())
+    #log.info(ApkUtil(r"D:\workspace\PycharmProjects\AutoTestAppium\yamls\config\CLauncher-release.apk").get_apk_size())
 
