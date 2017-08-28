@@ -14,3 +14,244 @@
 2017-08-22 18:41:32,236 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '4.3', 'deviceName': '78f64eef', 'udid': '78f64eef', 'app': 'D:\\uiTest\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
 2017-08-22 18:41:32,236 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '4.3', 'deviceName': '78f64eef', 'udid': '78f64eef', 'app': 'D:\\uiTest\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
 2017-08-22 18:41:32,236 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U 78f64eef --session-override --no-reset
+2017-08-23 15:03:19,766 - fileLogger - INFO - {'appPackage': 'com.cma.launcher.lite', 'versionCode': '99', 'versionName': '3.9.30mk', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity', 'appName': "'CLauncher'"}
+2017-08-23 15:03:19,810 - fileLogger - INFO - 11M
+2017-08-23 15:15:11,077 - fileLogger - INFO - {'appPackage': 'com.cma.launcher.lite', 'versionCode': '99', 'versionName': '3.9.30mk', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity', 'appName': "'CLauncher'"}
+2017-08-23 15:15:11,078 - fileLogger - INFO - 11M
+2017-08-23 15:29:36,559 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:29:36,560 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:29:36,560 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:29:36,560 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:30:40,660 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:30:40,661 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:30:40,661 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:30:40,662 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:38:51,939 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:38:51,939 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:38:51,939 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:38:51,939 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:38:52,020 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:40:04,063 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:40:04,064 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:40:04,064 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:40:04,064 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:40:04,070 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:40:28,806 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:40:28,807 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:40:28,807 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:40:28,807 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:40:28,813 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:45:48,450 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:45:48,450 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:45:48,450 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:45:48,450 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:45:48,459 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:46:25,324 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:46:25,327 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:46:25,328 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:46:25,329 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:46:28,659 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:46:52,130 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:46:52,132 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:46:52,132 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:46:52,133 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:46:52,151 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:50:29,202 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:50:29,203 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:50:29,203 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:50:29,203 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:50:29,274 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 15:50:29,275 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:50:29,822 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 15:51:05,232 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:51:05,233 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:51:05,233 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:51:05,233 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:51:05,239 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:52:24,616 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:52:24,616 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:52:24,616 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:52:24,616 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:52:24,623 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:52:41,234 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:52:41,234 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:52:41,234 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:52:41,234 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:52:41,242 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:56:14,176 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:56:14,177 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:56:14,177 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:56:14,177 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:56:14,199 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 15:57:34,449 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 15:57:36,971 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x0000000003BBC978> 
+2017-08-23 15:57:46,892 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 15:57:46,896 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:57:48,105 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 15:59:32,833 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 15:59:32,834 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 15:59:32,835 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 15:59:32,835 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 15:59:32,861 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:00:07,516 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 16:00:08,373 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x0000000003D9F390> 
+2017-08-23 16:00:12,838 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 16:00:12,842 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:01:14,656 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 16:01:14,657 - fileLogger - INFO - testcase_klass: <class 'testcase.first_open_test.FirstOpenTest'>
+2017-08-23 16:01:28,617 - fileLogger - INFO - testcase_klass: <class 'testcase.folder_test.FolderTest'>
+2017-08-23 16:02:23,032 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:02:23,944 - fileLogger - INFO - The s0wipe_left
+2017-08-23 16:02:25,287 - fileLogger - INFO - The s1wipe_left
+2017-08-23 16:02:26,673 - fileLogger - INFO - The s2wipe_left
+2017-08-23 16:02:27,673 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:02:37,761 - fileLogger - ERROR - operate failed,can't find check_point
+2017-08-23 16:05:19,568 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:05:19,568 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:05:19,568 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:05:19,568 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:05:19,576 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:08:20,702 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:08:20,703 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:08:20,703 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:08:20,703 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:08:20,710 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:08:53,285 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:08:53,286 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:08:53,286 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:08:53,287 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:08:53,332 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:12:14,641 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:12:14,641 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:12:14,642 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:12:14,642 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:12:14,660 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:12:35,854 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 16:12:36,405 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x0000000003BAB7B8> 
+2017-08-23 16:12:43,707 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 16:12:43,711 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:12:44,760 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 16:12:44,760 - fileLogger - INFO - testcase_klass: <class 'testcase.first_open_test.FirstOpenTest'>
+2017-08-23 16:13:19,459 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:13:19,459 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:13:19,460 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:13:19,460 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:13:19,502 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:20:22,639 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:20:22,639 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:20:22,639 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:20:22,639 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:20:22,655 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:20:23,681 - fileLogger - ERROR - http://127.0.0.1:4723/wd/hub/status time out!
+2017-08-23 16:20:28,684 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:20:28,777 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 16:20:28,777 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x0000000003621C50> 
+2017-08-23 16:20:28,777 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 16:20:28,777 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:20:29,074 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 16:20:29,074 - fileLogger - INFO - testcase_klass: <class 'testcase.first_open_test.FirstOpenTest'>
+2017-08-23 16:20:59,365 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 16:20:59,365 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:20:59,365 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 16:20:59,365 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 16:20:59,380 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:21:00,438 - fileLogger - ERROR - http://127.0.0.1:4723/wd/hub/status time out!
+2017-08-23 16:21:05,449 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 16:21:05,511 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 16:21:05,511 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x000000000365A160> 
+2017-08-23 16:21:05,511 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 16:21:05,511 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 16:21:05,928 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 16:21:05,928 - fileLogger - INFO - testcase_klass: <class 'testcase.first_open_test.FirstOpenTest'>
+2017-08-23 16:21:05,928 - fileLogger - INFO - testcase_klass: <class 'testcase.folder_test.FolderTest'>
+2017-08-23 16:21:39,852 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:21:39,852 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 16:21:40,461 - fileLogger - INFO - The 0 swipe_left
+2017-08-23 16:21:41,771 - fileLogger - INFO - The 1 swipe_left
+2017-08-23 16:21:43,120 - fileLogger - INFO - The 2 swipe_left
+2017-08-23 16:21:44,130 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:21:44,130 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 16:21:44,992 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/btn_enter', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:21:44,992 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:21:44,992 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 16:21:46,246 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/recommend_wallpaper', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:22:08,980 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:08,980 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:11,095 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/preview_background', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:22:11,095 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:11,095 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:12,771 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/folder_menu_btn', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:22:12,771 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:12,771 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:13,759 - fileLogger - INFO - click {'element_info': "//android.widget.LinearLayout[@index='2']", 'find_type': 'xpath', 'operate_type': 'click'}
+2017-08-23 16:22:13,759 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:13,759 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:19,600 - fileLogger - INFO - set rename
+2017-08-23 16:22:19,600 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:19,600 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:20,503 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/add_btn', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:22:20,503 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:20,503 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:21,531 - fileLogger - INFO - click {'element_info': "//android.widget.TextView[@index='2']", 'find_type': 'xpath', 'operate_type': 'click'}
+2017-08-23 16:22:21,531 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 16:22:21,531 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 16:22:22,305 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/wheelCoverView', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 16:22:22,586 - fileLogger - INFO - ---------------appium_stop_server---------------
+2017-08-23 17:06:21,992 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 17:06:21,992 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 17:06:21,992 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 17:06:21,992 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 17:06:22,008 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:28,129 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:34,153 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:40,143 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:46,211 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:52,265 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:06:58,306 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:07:04,337 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:07:10,379 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status
+2017-08-23 17:07:10,457 - fileLogger - INFO - ---------------appium_is_running_server---------------
+2017-08-23 17:07:10,457 - fileLogger - INFO - response: <http.client.HTTPResponse object at 0x0000000003632E48> 
+2017-08-23 17:07:10,457 - fileLogger - INFO - ---------------runner_pool---------------
+2017-08-23 17:07:10,457 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 17:07:10,956 - fileLogger - INFO - ---------------runner_case_app---------------
+2017-08-23 17:07:10,956 - fileLogger - INFO - testcase_klass: <class 'testcase.first_open_test.FirstOpenTest'>
+2017-08-23 17:07:10,956 - fileLogger - INFO - testcase_klass: <class 'testcase.folder_test.FolderTest'>
+2017-08-23 17:07:46,848 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:07:46,848 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 17:07:47,457 - fileLogger - INFO - The 0 swipe_left
+2017-08-23 17:07:48,768 - fileLogger - INFO - The 1 swipe_left
+2017-08-23 17:07:50,127 - fileLogger - INFO - The 2 swipe_left
+2017-08-23 17:07:51,128 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:07:51,128 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 17:07:52,017 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/btn_enter', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:07:52,017 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:07:52,017 - fileLogger - INFO - test_info: [{'id': 'test00001', 'title': '首次启动应用，选择推荐，进入clauncher'}]
+2017-08-23 17:07:53,374 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/recommend_wallpaper', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:08:18,229 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:18,229 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:20,904 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/preview_background', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:08:20,904 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:20,904 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:22,344 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/folder_menu_btn', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:08:22,344 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:22,344 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:23,202 - fileLogger - INFO - click {'element_info': "//android.widget.LinearLayout[@index='2']", 'find_type': 'xpath', 'operate_type': 'click'}
+2017-08-23 17:08:23,202 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:23,202 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:29,094 - fileLogger - INFO - set rename
+2017-08-23 17:08:29,094 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:29,094 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:29,718 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/add_btn', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:08:29,718 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:29,718 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:31,528 - fileLogger - INFO - click {'element_info': "//android.widget.TextView[@index='2']", 'find_type': 'xpath', 'operate_type': 'click'}
+2017-08-23 17:08:31,544 - fileLogger - INFO - ----------------base_operate---------------
+2017-08-23 17:08:31,544 - fileLogger - INFO - test_info: [{'id': 'test00002', 'title': '文件夹'}]
+2017-08-23 17:08:32,827 - fileLogger - INFO - click {'element_info': 'com.cma.launcher.lite:id/wheelCoverView', 'find_type': 'id', 'operate_type': 'click'}
+2017-08-23 17:08:33,342 - fileLogger - INFO - ---------------appium_stop_server---------------
+2017-08-23 17:09:09,333 - fileLogger - INFO - ---------------appium_start_server---------------
+2017-08-23 17:09:09,333 - fileLogger - INFO - [{'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}]
+2017-08-23 17:09:09,349 - fileLogger - INFO - {'platformName': 'Android', 'port': 4723, 'bsport': 4733, 'platformVersion': '6.0.1', 'deviceName': 'bb12d8f6', 'udid': 'bb12d8f6', 'app': 'D:\\workspace\\AutoTestAppium\\yamls\\config\\CLauncher-release.apk', 'appPackage': 'com.cma.launcher.lite', 'appActivity': 'com.cyou.cma.clauncher.VirtualEntryActivity'}
+2017-08-23 17:09:09,349 - fileLogger - INFO - appium -a 127.0.0.1 -p 4723 -bp 4733 -U bb12d8f6 --session-override --no-reset
+2017-08-23 17:09:09,364 - fileLogger - INFO - waiting to connect: http://127.0.0.1:4723/wd/hub/status

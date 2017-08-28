@@ -1,4 +1,4 @@
-apk: D:\uiTest\AutoTestAppium\yamls\config\CLauncher-release.apk
+apk: D:\workspace\AutoTestAppium\yamls\config\CLauncher-release.apk
 devices:
   - platformName: Android
     port: 4723

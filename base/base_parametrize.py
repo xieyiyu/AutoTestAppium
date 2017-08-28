@@ -1,6 +1,6 @@
 import unittest
 from appium import webdriver
-from utils.logging_config import log
+from utils.logging_util import log
 
 '''
 参数化测试用例
@@ -35,7 +35,7 @@ class ParametrizedTestCase(unittest.TestCase):
 
     @staticmethod
     def parametrize(testcase_klass, param=None):
-        log.info('testcase_klass: ', testcase_klass)
+        log.info('testcase_klass: %s' % testcase_klass)
         testloader = unittest.TestLoader()
         testnames = testloader.getTestCaseNames(testcase_klass)
         suite = unittest.TestSuite()

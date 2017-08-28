@@ -1,4 +1,4 @@
-from utils.logging_config import log
+from utils.logging_util import log
 from time import sleep
 import selenium.common.exceptions
 from selenium.webdriver.support.ui import WebDriverWait
@@ -30,7 +30,6 @@ class BaseOperate:
         except selenium.common.exceptions.TimeoutException:
             return False
         except selenium.common.exceptions.NoSuchElementException:
-            print("can't find element")
             return False
 
     # 封装操作
@@ -42,7 +41,7 @@ class BaseOperate:
         :return:
         """
         log.info('----------------base_operate---------------')
-        log.info('test_info: ', test_info)
+        log.info('test_info: %s' % test_info)
         if self.find_element(case_operate):
             elements = {
                 BaseElement.CLICK: lambda: self.click(case_operate),
@@ -58,14 +57,14 @@ class BaseOperate:
         元素点击事件
         """
         self.find_element_by(case_operate).click() # 此处应添加判断testcase['find_type']是否是BaseElement类中定义的类型之一
-        log.info("click s%",case_operate)
+        log.info("click %s" % case_operate)
 
     def set_value(self, case_operate):
         """
         设置值
         """
         self.find_element_by(case_operate).set_value(case_operate["text"])
-        log.info("set s%", case_operate["text"])
+        log.info("set %s" % case_operate["text"])
 
     # 左滑动
     def swipe_left(self, case_operate):
@@ -76,7 +75,7 @@ class BaseOperate:
         height = self.driver.get_window_size()['height']
         for i in range(case_operate['times']):
             self.driver.swipe(width * 0.8, height * 0.5, width * 0.2, height * 0.5, case_operate['swipe_time'])
-            log.info("The s% swipe_left", i)
+            log.info("The %s swipe_left" % i)
             sleep(1)
 
     def swipe_right(self, case_operate):
@@ -87,7 +86,7 @@ class BaseOperate:
         height = self.driver.get_window_size()['height']
         for i in range(case_operate['times']):
             self.driver.swipe(width * 0.2, height * 0.5, width * 0.8, height * 0.5, case_operate['swipe_time'])
-            log.info("The s% swipe_right", i)
+            log.info("The %s swipe_right" % i)
             sleep(1)
 
     def find_element_by(self, case_operate):

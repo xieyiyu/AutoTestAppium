@@ -1,5 +1,5 @@
 import subprocess
-from utils.logging_config import log
+from utils.logging_util import log
 
 '''
 adb 命令
@@ -84,8 +84,27 @@ class AdbUtil(object):
         """
         return self.adb("install -r %s" % apk_path)
 
+    def is_app_installed(self, appPackage):
+        """
+        判断应用是否安装
+        :param appPackage: 包名
+        :return: 已安装返回true，否则返回false
+        """
+        app_list = self.adb("shell pm list packages %s" % appPackage).stdout.read().strip().decode()
+        if appPackage in app_list:
+            return True
+        else:
+            return False
+
+    def remove_app(self, appPackage):
+        """
+        卸载应用
+        :param appPackage: 包名
+        :return:
+        """
+        return self.adb("uninstall %s" % appPackage)
+
 if __name__ == '__main__':
-    log.info(AdbUtil().get_device_list())
-    log.info(AdbUtil().get_android_version())
-    log.info(AdbUtil().get_device_model(), AdbUtil().get_device_brand(), AdbUtil().get_device_name())
+    if AdbUtil().is_app_installed("com.cma.launcher.lite"):
+        AdbUtil().remove_app("com.cma.launcher.lite")
 
