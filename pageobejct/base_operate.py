@@ -41,19 +41,24 @@ class BaseOperate:
         """
         log.info('----------------base_operate---------------')
         log.info('test_info: %s' % test_info)
-        if self.find_element(case_operate):
-            elements = {
-                BaseElement.CLICK: lambda: self.click(case_operate),
-                BaseElement.SET_VALUE: lambda : self.set_value(case_operate),
-                BaseElement.SWIPE_LEFT: lambda: self.swipe_left(case_operate),
-                BaseElement.SWIPE_RIGHT: lambda: self.swipe_right(case_operate),
-                BaseElement.SWIPE_UP: lambda: self.swipe_up(case_operate),
-                BaseElement.SWIPE_DOWN: lambda: self.swipe_down(case_operate),
-                BaseElement.KEY_EVENT: lambda : self.key_event(case_operate)
-            }
+        elements = {
+            BaseElement.CLICK: lambda: self.click(case_operate),
+            BaseElement.SET_VALUE: lambda: self.set_value(case_operate),
+            BaseElement.SWIPE_LEFT: lambda: self.swipe_left(case_operate),
+            BaseElement.SWIPE_RIGHT: lambda: self.swipe_right(case_operate),
+            BaseElement.SWIPE_UP: lambda: self.swipe_up(case_operate),
+            BaseElement.SWIPE_DOWN: lambda: self.swipe_down(case_operate),
+            BaseElement.KEY_EVENT: lambda: self.key_event(case_operate)
+        }
+        if case_operate.__contains__('element_info'): # 没有element_info这个键，不查找元素，直接执行
+            if self.find_element(case_operate):
+                elements[case_operate['operate_type']]()
+                return True
+            return False
+        else:
             elements[case_operate['operate_type']]()
             return True
-        return False
+
 
     def find_element_by(self, case_operate):
         """

@@ -33,7 +33,10 @@ testcase:
     - element_info: com.cma.launcher.lite:id/preview_background
       find_type: id
       operate_type: click
-    - element_info: com.cma.launcher.lite:id/preview_background
-      find_type: id
-      operate_type: key_event
+    - operate_type: key_event
       key_code: 4
+    - element_info: com.cma.launcher.lite:id/search_button_container
+      find_type: id
+      operate_type: swipe_right
+      times: 2
+      swipe_time: 600
