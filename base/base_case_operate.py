@@ -36,3 +36,4 @@ class BaseCase:
         else:
             check = get_yaml(self.path)['check']
             result = self.operate_element.find_element(check)
+        return result
