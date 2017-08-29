@@ -13,11 +13,21 @@ class BaseElement(object):
 
     # 操作
     CLICK = "click"
+    # 设置值
     SET_VALUE = "set_value"
+    # 左滑
     SWIPE_LEFT = "swipe_left"
+    # 右滑
     SWIPE_RIGHT = "swipe_right"
+    # 上滑
     SWIPE_UP = "swipe_up"
+    # 下滑
     SWIPE_DOWN = "swipe_down"
-    KEY_EVENT = "key_event" # 实体按键操作，用例中仍要写element_info、find_type
+    # 实体按键操作，用例中仍要写element_info、find_type
+    KEY_EVENT = "key_event"
+    # 在元素上执行放大操作
+    ZOOM = "zoom"
+    # 在元素上执行模拟双指捏（缩小操作）
+    PINCH = "pinch"
 
     TAP = "tap"

@@ -48,7 +48,9 @@ class BaseOperate:
             BaseElement.SWIPE_RIGHT: lambda: self.swipe_right(case_operate),
             BaseElement.SWIPE_UP: lambda: self.swipe_up(case_operate),
             BaseElement.SWIPE_DOWN: lambda: self.swipe_down(case_operate),
-            BaseElement.KEY_EVENT: lambda: self.key_event(case_operate)
+            BaseElement.KEY_EVENT: lambda: self.key_event(case_operate),
+            BaseElement.ZOOM: lambda: self.zoom_element(case_operate),
+            BaseElement.PINCH: lambda: self.pinch_element(case_operate)
         }
         if case_operate.__contains__('element_info'): # 没有element_info这个键，不查找元素，直接执行
             if self.find_element(case_operate):
@@ -144,3 +146,18 @@ class BaseOperate:
         log.info("key_event: " % case_operate)
         self.driver.keyevent(case_operate['key_code'])
 
+    def zoom_element(self, case_operate):
+        """
+        在元素上执行放大操作 未能成功操作，待实现！！！！！！！
+        :return:
+        """
+        el = self.find_element_by(case_operate)
+        self.driver.zoom(el)
+
+    def pinch_element(self, case_operate):
+        """
+        在元素上执行模拟双指捏（缩小操作） 未能成功操作，待实现！！！！！！！
+        :return:
+        """
+        el = self.find_element_by(case_operate)
+        self.driver.pinch(el)
