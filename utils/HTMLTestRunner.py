@@ -396,10 +396,14 @@ a.popup_link:hover {
     # Heading
     #
 
-    HEADING_TMPL = """<div class='heading'>
-<h1>%(title)s</h1>
-%(parameters)s
-<p class='description'>%(description)s</p>
+    HEADING_TMPL = """
+<div class='heading'>
+    <h1 class='heading_title'>%(title)s</h1>
+    <div class='heading_body'>
+        %(parameters)s
+        <p class='description'>%(description)s</p>
+        <hr>
+    </div>
 </div>
 
 """ # variables: (title, parameters, description)
@@ -414,38 +418,42 @@ a.popup_link:hover {
     #
 
     REPORT_TMPL = """
-<p id='show_detail_line'>Show
-<a href='javascript:showCase(0)'>Summary</a>
-<a href='javascript:showCase(1)'>Failed</a>
-<a href='javascript:showCase(2)'>All</a>
-</p>
-<table id='result_table'>
-<colgroup>
-<col align='left' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-<col align='right' />
-</colgroup>
-<tr id='header_row'>
-    <td>Test Group/Test case</td>
-    <td>Count</td>
-    <td>Pass</td>
-    <td>Fail</td>
-    <td>Error</td>
-    <td>View</td>
-</tr>
-%(test_list)s
-<tr id='total_row'>
-    <td>Total</td>
-    <td>%(count)s</td>
-    <td>%(Pass)s</td>
-    <td>%(fail)s</td>
-    <td>%(error)s</td>
-    <td>&nbsp;</td>
-</tr>
-</table>
+<div class="report_body">
+    <p id='show_detail_line'>
+        <a href='javascript:showCase(0)'>Summary</a>
+        <a href='javascript:showCase(1)'>Failed</a>
+        <a href='javascript:showCase(2)'>All</a>
+    </p>
+    <table id='result_table' class="table table-striped">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+        <tr id='header_row'>
+            <td>Test Group/Test case</td>
+            <td>Count</td>
+            <td>Pass</td>
+            <td>Fail</td>
+            <td>Error</td>
+            <td>View</td>
+            <td>Screenshot</td>
+        </tr>
+        %(test_list)s
+        <tr id='total_row'>
+            <td>Total</td>
+            <td>%(count)s</td>
+            <td>%(Pass)s</td>
+            <td>%(fail)s</td>
+            <td>%(error)s</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</div>
 """ # variables: (test_list, count, Pass, fail, error)
 
     REPORT_CLASS_TMPL = r"""
@@ -456,6 +464,7 @@ a.popup_link:hover {
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td><a href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
+    <td>&nbsp;</td>
 </tr>
 """ # variables: (style, desc, count, Pass, fail, error, cid)
 
@@ -479,8 +488,10 @@ a.popup_link:hover {
         </pre>
     </div>
     <!--css div popup end-->
-
     </td>
+    <td>
+       <a>截图</a>
+    </td>   
 </tr>
 """ # variables: (tid, Class, style, desc, status)
 
@@ -496,7 +507,6 @@ a.popup_link:hover {
     REPORT_TEST_OUTPUT_TMPL = r"""
 %(id)s: %(output)s
 """ # variables: (id, output)
-
 
 
     # ------------------------------------------------------------------------
@@ -795,7 +805,6 @@ class HTMLTestRunner(Template_mixin):
 
     def _generate_ending(self):
         return self.ENDING_TMPL
-
 
 ##############################################################################
 # Facilities for running tests from the command line

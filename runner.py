@@ -39,8 +39,10 @@ def runner_case_app(devices_app):
     testuite = unittest.TestSuite()
     testuite.addTest(ParametrizedTestCase.parametrize(FirstOpenTest, param=devices_app))
     testuite.addTest(ParametrizedTestCase.parametrize(FolderTest, param=devices_app))
-    fp = open(PATH("../report/report.html"), "wb")
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u"自动化测试报告", description=u"用例执行情况")
+    timestr = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
+    fp = open(PATH("../report/" + timestr + "_report.html"), "wb")
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'Clauncher自动化测试报告', description=u'用例执行详情')
+    runner.STYLESHEET_TMPL = '<link rel="stylesheet" href="../utils/my_stylesheet.css" type="text/css">'
     runner.run(testuite)
     fp.close()
 

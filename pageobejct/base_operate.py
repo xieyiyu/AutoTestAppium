@@ -152,7 +152,7 @@ class BaseOperate:
         :return:
         """
         el = self.find_element_by(case_operate)
-        self.driver.zoom(el)
+        self.driver.zoom(element=el)
 
     def pinch_element(self, case_operate):
         """
@@ -160,4 +160,4 @@ class BaseOperate:
         :return:
         """
         el = self.find_element_by(case_operate)
-        self.driver.pinch(el)
+        self.driver.pinch(element=el)

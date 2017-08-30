@@ -8,9 +8,12 @@ PATH = lambda p: os.path.abspath(
 )
 
 class FirstOpenTest(ParametrizedTestCase):
-    def test_first_open(self): # 方法命名要以test_开头
+    def test_01_first_open(self): # 方法命名要以test_开头
         self.first_open.operate(test_case_name='first_open')
         self.first_open.check_point()
+
+    # def test_02(self):
+    #     self.first_open.operate(test_case_name='zoom_test')
 
     def setUp(self):
         super(FirstOpenTest, self).setUp()

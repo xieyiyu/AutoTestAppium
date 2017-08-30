@@ -13,6 +13,11 @@ testcase:
       find_type: id
       operate_type: click
 
+#  zoom_test:
+#    - element_info: com.cma.launcher.lite:id/time_widget
+#      find_type: id
+#      operate_type: zoom
+
 check:
   - element_info: com.cma.launcher.lite:id/wheelCoverView
     find_type: id
